@@ -1,0 +1,194 @@
+/* FULL SCREEN BACKGROUND */
+.upload-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #c9f7f5,
+    #a8edea,
+    #8fd3f4
+  );
+
+  font-family: "Poppins", sans-serif;
+}
+.upload-card {
+  width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s ease;
+}
+.upload-card:hover {
+  transform: translateY(-6px) scale(1.02);
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+
+  background: rgba(255, 255, 255, 0.35);
+}
+.upload-card input,
+.upload-card textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+
+  border: none;
+  border-bottom: 1px solid #888;
+
+  background: transparent;
+  outline: none;
+
+  font-size: 14px;
+  color: #000;
+}
+.upload-card button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #28a745;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.upload-card button:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+.upload-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.upload-subtitle {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* SPACE BETWEEN SECTIONS */
+.upload-card label:nth-of-type(2) {
+  margin-top: 25px;   /* creates gap above "Paste Job Description" */
+}
+
+.form-group {
+  margin-bottom: 25px;   /* clean spacing between blocks */
+}
+
+/* SPINNER */
+.spinner {
+  border: 4px solid #eee;
+  border-top: 4px solid #28a745;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+/* SPIN ANIMATION */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* HEADING */
+.main-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 500px;
+}
+
+/* GLASS CARD */
+.glass-form {
+  width: 380px;
+  padding: 30px;
+
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* LABEL */
+.glass-form label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* INPUT */
+.glass-form input,
+.glass-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  outline: none;
+}
+
+/* TEXTAREA */
+.glass-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* BUTTON */
+.glass-form button {
+  margin-top: 10px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.glass-form button:hover {
+  background: #218838;
+}

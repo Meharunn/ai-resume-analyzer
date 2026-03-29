@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #b2f7ef, #a0e7e5);
+}
+
+/* MAIN CONTAINER */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT SIDE IMAGE */
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  width: 80%;
+  max-width: 500px;
+
+  border-radius: 25px;   /* smooth rounded edges */
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25),   /* main shadow */
+    0 10px 20px rgba(0, 0, 0, 0.15);   /* soft shadow */
+
+  border: 3px solid rgba(255, 255, 255, 0.4); /* subtle border */
+
+  transition: 0.3s ease;
+}
+
+.left img:hover {
+  transform: scale(1.03);
+}
+
+/* RIGHT SIDE */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLASS CARD */
+.glass-card {
+  width: 320px;
+  padding: 25px;
+
+  border-radius: 20px;
+
+  /* ✨ REAL GLASS EFFECT */
+  background: rgba(255, 255, 255, 0.25);  /* lighter */
+  backdrop-filter: blur(30px);            /* more blur */
+  -webkit-backdrop-filter: blur(30px);
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    inset 0 0 10px rgba(255, 255, 255, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25),
+    inset 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
+/* TITLE */
+.glass-card h1 {
+  color: #000;        /* ⬅ black */
+  font-size: 24px;    /* ⬅ slightly smaller */
+  margin-bottom: 5px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  color: #333;        /* ⬅ dark grey */
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+/* INPUT */
+.glass-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+
+  background: transparent;
+  color: #000;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+/* PLACEHOLDER */
+.glass-card input:focus {
+  border-bottom: 1px solid #22c55e;
+}
+
+/* BUTTON */
+.glass-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.glass-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* LINK */
+.link {
+  margin-top: 12px;
+  color: #000;   /* ⬅ black */
+  font-size: 13px;
+  text-align: center;
+}
+
+.link a {
+  color: #16a34a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}

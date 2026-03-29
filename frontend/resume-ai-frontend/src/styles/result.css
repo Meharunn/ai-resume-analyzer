@@ -1,0 +1,126 @@
+/* BACKGROUND */
+.result-container {
+  min-height: 100vh;
+  padding: 40px;
+
+  background: linear-gradient(
+    135deg,
+    #c9f7f5,
+    #a8edea,
+    #8fd3f4
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SCORE CARD */
+.score-card {
+  width: 300px;
+  text-align: center;
+  padding: 25px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  margin-bottom: 30px;
+}
+
+.score-card h1 {
+  font-size: 48px;
+  color: #28a745;
+}
+
+/* GRID */
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* GLASS BOX */
+.glass-box {
+  padding: 20px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s;
+}
+
+.glass-box:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* HEADINGS */
+.matched {
+  color: green;
+}
+
+.missing {
+  color: red;
+}
+
+.suggestion {
+  color: blue;
+}
+
+/* LIST */
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* NO DATA */
+.result-card {
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+
+  text-align: center;
+}
+
+.result-card button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.upload-again-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.upload-again-btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
